@@ -1,0 +1,116 @@
+/* base.css */
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #333; 
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    color: #fff; 
+}
+
+header h1 {
+    font-size: 5rem; 
+    margin: 0;
+}
+
+header nav ul {
+    font-size: 2.5rem;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav li {
+    margin: 0 1rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #0056b3;
+}
+
+main {
+    width: 80%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.card {
+    background-color: #e0dcdc;
+    padding: 5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    align-items: center;
+    
+    
+}
+
+.card:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.card:nth-child(even) {
+    flex-direction: row;
+}
+
+.card img {
+    width: 400px; 
+    height:600px; 
+    position:relative;
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    right: 10px; /* Ajusta la distancia desde la parte derecha */
+}
+
+.card h2 {
+    font-size: 2.5rem; /* Aumenta el tamaño de las letras */
+}
+
+.card p {
+    font-size: 1.8rem; 
+}
+
+.card a {
+    font-size: 5rem; 
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.card a:hover {
+    color: #0056b3;
+}
+
+footer {
+    background-color: #333; 
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: #fff; 
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+h3 {
+    font-size: 2.5rem;
+
+}
