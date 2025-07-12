@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  background-color: #003366;
+  background-color: #b0d5fa;
   color: white;
   padding: 1rem;
   position: relative;
@@ -58,7 +58,7 @@ figure {
 }
 
 footer {
-  background-color: #eee;
+  background-color: #cbc7c7;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
@@ -67,4 +67,8 @@ img {
   width: 100%;
   height: auto;
   border-radius: 8px;
+}
+nav a:hover {
+  color: #97c8f9;
+  text-decoration: underline;
 }
