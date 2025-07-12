@@ -1,0 +1,14 @@
+@media screen and (min-width: 500px) {
+  /* Cambiar el header a fondo negro con texto blanco */
+  header {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  /* Hacer que el main tenga dos columnas del mismo tamaño */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}

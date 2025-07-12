@@ -1,0 +1,33 @@
+/* 1. Fuente Roboto */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0; /* opcional, un fondo general claro */
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. header, main, footer - mismos estilos */
+header,
+main,
+footer {
+  max-width: 640px;
+  margin: 1rem auto;
+  border: 1px solid #ccc; /* borde tenue */
+  padding: 1rem;
+  background-color: #d0e8f2; /* azul claro, podés cambiarlo si querés */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* opcional: sombra suave */
+}
+
+/* 3. main como grid de una columna con gap */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* 4. Estilos para cada sección */
+section {
+  padding: 1rem;
+  background-color: #ffffff; /* fondo blanco o más claro que el main */
+  border-radius: 4px; /* opcional: bordes redondeados */
+}

@@ -1,0 +1,14 @@
+#menu {
+  display: none;
+}
+
+nav {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gallery {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
