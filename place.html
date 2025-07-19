@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bariloche - Travel Guide</title>
+  <link rel="stylesheet" href="week3/styles/place.css" />
+  <script src="week3/scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Explore Bariloche</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Weather</a></li>
+        <li><a href="#">Attractions</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+<div class="banner">Welcome to Bariloche Travel Guide!</div>
+  
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="week3/images/bariloche-large.webp" media="(min-width: 900px)" />
+        <source srcset="week3/images/bariloche-medium.webp" media="(min-width: 600px)" />
+        <img src="week3/images/bariloche-small.webp" alt="Scenic view of Bariloche" />
+      </picture>
+      <h2>Welcome to Bariloche</h2>
+    </section>
+
+    <section class="weather">
+      <h3>Weather <span class="icon" aria-hidden="true"></span></h3>
+      <p>Temperature: <span id="temp">8</span>°C</p>
+      <p>Wind Speed: <span id="wind">10</span> km/h</p>
+      <p>Wind Chill: <span id="windchill">Calculating...</span></p>
+    </section>
+
+    <section class="attractions">
+      <h3>Top Attractions</h3>
+      <ul>
+        <li>Cerro Catedral</li>
+        <li>Llao Llao Hotel</li>
+        <li>Lake Nahuel Huapi</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

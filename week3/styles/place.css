@@ -1,0 +1,163 @@
+
+/* Estilos generales del body */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #E0E0E0; /* gris claro */
+  color: #2F4F4F; /* verde oscuro para texto principal */
+  margin: 0;
+  padding: 0 1em;
+  line-height: 1.6;
+}
+
+/* Header con fondo verde oscuro y texto claro */
+header {
+  background-color: #2F4F4F; /* verde oscuro */
+  color: #F5F5F5; /* blanco crema */
+  padding: 1em;
+  text-align: center;
+}
+
+/* Estilos para enlaces del menú */
+nav ul.menu li a {
+  color: #F5F5F5; /* blanco crema */
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Efectos hover y focus para enlaces */
+nav ul.menu li a:hover,
+nav ul.menu li a:focus {
+  text-decoration: underline;
+  color: #FFD700; /* cambio de color en hover */
+  outline: none;
+}
+
+/* Layout principal con grid de dos columnas */
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2em;
+  max-width: 900px;
+  margin: 2em auto;
+}
+
+/* Título principal de la sección hero ocupa dos columnas */
+.hero > h2 {
+  grid-column: 1 / -1;
+  text-align: left;
+  margin-top: 0.5em;
+  color: #4A90E2; /* azul lago para destacar título */
+}
+
+/* Imagen principal con bordes redondeados */
+.hero picture img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Sección clima con fondo azul y texto claro */
+.weather {
+  background-color: #4A90E2; /* azul lago */
+  color: #F5F5F5; /* blanco crema */
+  padding: 1em;
+  border-radius: 8px;
+}
+
+/* Títulos en la sección clima alineados a la izquierda */
+.weather h3 {
+  margin-top: 0;
+  text-align: left;
+}
+
+/* Párrafos en clima con margen vertical */
+.weather p {
+  margin: 0.5em 0;
+}
+
+/* Sección atracciones con fondo marrón y texto claro */
+.attractions {
+  background-color: #8B5E3C; /* marrón tierra */
+  color: #F5F5F5; /* blanco crema */
+  padding: 1em;
+  border-radius: 8px;
+}
+
+/* Títulos en atracciones alineados a la izquierda */
+.attractions h3 {
+  margin-top: 0;
+  text-align: left;
+}
+
+/* Lista sin margen y con sangría */
+.attractions ul {
+  padding-left: 1.2em;
+  margin: 0;
+}
+
+/* Espaciado entre ítems de la lista */
+.attractions li {
+  margin-bottom: 0.5em;
+}
+
+/* Footer con fondo verde oscuro, texto claro y bordes redondeados */
+footer {
+  background-color: #2F4F4F; /* verde oscuro */
+  padding: 1em;
+  text-align: left;
+  max-width: 900px;
+  margin: 2em auto 1em auto;
+  font-size: 0.9em;
+  color: #F5F5F5;
+  border-radius: 8px;
+}
+
+/* Feedback visual para enlaces en focus y hover */
+a:focus,
+a:hover {
+  outline: 2px solid #4A90E2; /* azul lago */
+  outline-offset: 2px;
+}
+
+/* Icono SVG solo visible en móviles */
+.icon img {
+  display: none;
+}
+
+/* Mostrar icono SVG en pantallas pequeñas */
+@media (max-width: 600px) {
+  .icon img {
+    display: inline-block;
+    width: 24px;
+  }
+}
+
+/* Layout responsive: main cambia a una columna en pantallas pequeñas */
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  .hero > h2 {
+    grid-column: auto;
+  }
+}
+
+/* Emoticon sonriente solo visible en pantallas anchas */
+@media (min-width: 900px) {
+  .weather h3::after {
+    content: " 🙂";
+  }
+}
+
+/* Estilo para el banner fijo */
+.banner {
+  background-color: #4A90E2; /* azul lago */
+  color: #F5F5F5; /* blanco crema */
+  padding: 1em;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 1em auto;
+  font-size: 1.2rem;
+}
