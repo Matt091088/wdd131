@@ -5,7 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bariloche - Travel Guide</title>
+
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- CSS -->
   <link rel="stylesheet" href="week3/styles/place.css" />
+  <!-- JS -->
   <script src="week3/scripts/place.js" defer></script>
 </head>
 
@@ -20,9 +25,9 @@
       </ul>
     </nav>
   </header>
-  
-<div class="banner">Welcome to Bariloche Travel Guide!</div>
-  
+
+  <div class="banner">Welcome to Bariloche Travel Guide!</div>
+
   <main>
     <section class="hero">
       <picture>
@@ -33,12 +38,25 @@
       <h2>Welcome to Bariloche</h2>
     </section>
 
-    <section class="weather">
-      <h3>Weather <span class="icon" aria-hidden="true"></span></h3>
-      <p>Temperature: <span id="temp">8</span>°C</p>
-      <p>Wind Speed: <span id="wind">10</span> km/h</p>
-      <p>Wind Chill: <span id="windchill">Calculating...</span></p>
-    </section>
+<section class="weather">
+  <h3>
+    Weather
+    <!-- Ícono SVG solo visible en móvil -->
+    <span class="icon-mobile" aria-hidden="true">
+      <img src="week3/images/weather.svg" alt="Weather icon" />
+    </span>
+  </h3>
+
+  <!-- Ícono Font Awesome solo visible en desktop -->
+  <div class="weather-icon-desktop" aria-hidden="true">
+    <i class="fas fa-cloud-sun fa-2x" style="color: #FFA500;"></i>
+  </div>
+
+  <p>Temperature: <span id="temp">8</span>°C</p>
+  <p>Wind Speed: <span id="wind">10</span> km/h</p>
+  <p>Wind Chill: <span id="windchill">Calculating...</span></p>
+</section>
+
 
     <section class="attractions">
       <h3>Top Attractions</h3>
@@ -54,4 +72,5 @@
     <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
   </footer>
 </body>
+
 </html>

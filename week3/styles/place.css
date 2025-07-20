@@ -1,3 +1,4 @@
+/* place.css */
 
 /* Estilos generales del body */
 body {
@@ -68,6 +69,9 @@ main {
 .weather h3 {
   margin-top: 0;
   text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
 }
 
 /* Párrafos en clima con margen vertical */
@@ -119,24 +123,51 @@ a:hover {
   outline-offset: 2px;
 }
 
-/* Icono SVG solo visible en móviles */
-.icon img {
+/* Por defecto ocultamos el icono SVG móvil */
+.icon-mobile {
   display: none;
 }
 
-/* Mostrar icono SVG en pantallas pequeñas */
-@media (max-width: 600px) {
-  .icon img {
-    display: inline-block;
-    width: 24px;
-  }
+/* Por defecto mostramos icono Font Awesome desktop */
+.weather-icon-desktop {
+  display: block;
+  margin-left: auto;
 }
 
-/* Layout responsive: main cambia a una columna en pantallas pequeñas */
+/* Mostrar icono SVG en móviles, ocultar icono FontAwesome */
 @media (max-width: 600px) {
+  .icon-mobile {
+    display: inline-block;
+    width: 24px;
+    height: auto;
+  }
+
+  .icon-mobile img {
+    width: 24px;
+    height: auto;
+  }
+
+  .weather-icon-desktop {
+    display: none;
+  }
+
+  /* En móviles, el header, main y footer se centran para mejor diseño */
+  header, main, footer {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  nav ul.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 0;
+  }
+
   main {
     grid-template-columns: 1fr;
   }
+
   .hero > h2 {
     grid-column: auto;
   }
