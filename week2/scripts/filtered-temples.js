@@ -11,56 +11,55 @@ menuButton.addEventListener('click', () => {
   menuButton.textContent = nav.classList.contains('open') ? '✖' : '☰';
 });
 
-// Lista de templos
-const temples = [
+  const temples = [
   {
     templeName: "Córdoba Argentina",
     location: "Córdoba, Argentina",
     dedicated: "2015, May, 17",
     area: 32100,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cordoba-argentina/400x250/cordoba-argentina-temple-lds-1536043-wallpaper.jpg"
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Templo_de_C%C3%B3rdoba_Argentina_2015.jpg"
   },
   {
     templeName: "Salta Argentina",
     location: "Salta, Argentina",
     dedicated: "2023, September, 3",
     area: 27000,
-    imageUrl: "https://www.churchofjesuschrist.org/imgs/b8f1fdf83f87873d842c2ab51c52831cc3c726c2/full/400%2C/0/default"
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/7d/Salta_Catedral.JPG"
   },
   {
     templeName: "Buenos Aires Argentina",
     location: "Buenos Aires, Argentina",
     dedicated: "1986, January, 17",
     area: 44000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires-argentina/400x250/buenos-aires-temple-lds-1108807-wallpaper.jpg"
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/54/Buenos_Aires_-_Templo_Morm%C3%B3n_01.jpg"
   },
   {
     templeName: "Recife Brazil",
     location: "Recife, Brazil",
     dedicated: "2000, December, 15",
     area: 37000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/400x250/recife-temple-lds-904159-wallpaper.jpg"
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/90/Templo_de_Recife_-_Brasil.JPG"
   },
   {
     templeName: "Mexico City Mexico",
     location: "Mexico City, Mexico",
     dedicated: "1983, December, 2",
     area: 116642,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-lds-782998-wallpaper.jpg"
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Mexico_City_Mormon_Temple.JPG"
   },
   {
     templeName: "Sapporo Japan",
     location: "Sapporo, Japan",
     dedicated: "2016, August, 21",
     area: 48480,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/400x250/sapporo-temple-lds-1901053-wallpaper.jpg"
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Sapporo_Mormon_Temple_02.jpg"
   },
   {
     templeName: "Santiago Chile",
     location: "Santiago, Chile",
     dedicated: "1983, September, 15",
     area: 20585,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/santiago-chile/400x250/santiago-temple-lds-1068974-wallpaper.jpg"
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/04/Templo_Morm%C3%B3n_de_Santiago.jpg"
   },
   {
     templeName: "Patagonia Temple",
@@ -85,7 +84,7 @@ const temples = [
   }
 ];
 
-// Mostrar templos en pantalla
+// Mostrar templos
 function outputTemples(temples) {
   const container = document.querySelector("#temples");
   container.innerHTML = "";
@@ -144,14 +143,14 @@ function filterTemples(criteria) {
   outputTemples(filtered);
 }
 
-// Botones de navegación
+// Botones
 document.querySelector("#home").addEventListener("click", () => filterTemples("all"));
 document.querySelector("#old").addEventListener("click", () => filterTemples("old"));
 document.querySelector("#new").addEventListener("click", () => filterTemples("new"));
 document.querySelector("#large").addEventListener("click", () => filterTemples("large"));
 document.querySelector("#small").addEventListener("click", () => filterTemples("small"));
 
-// Mostrar todos al cargar
+// Cargar templos por defecto
 document.addEventListener("DOMContentLoaded", () => {
   outputTemples(temples);
 });
