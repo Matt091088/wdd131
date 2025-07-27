@@ -62,30 +62,28 @@ const temples = [
     area: 20585,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/santiago-chile/400x250/santiago-temple-lds-1068974-wallpaper.jpg"
   },
-  // Inventados
   {
     templeName: "Patagonia Temple",
     location: "Bariloche, Argentina",
     dedicated: "2025, March, 1",
     area: 18000,
-    imageUrl: "https://via.placeholder.com/400x250?text=Patagonia+Temple"
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/76/Temple_in_Chile.jpg"
   },
   {
     templeName: "Montevideo North Temple",
     location: "Montevideo, Uruguay",
     dedicated: "2026, June, 20",
     area: 9500,
-    imageUrl: "https://via.placeholder.com/400x250?text=Montevideo+North+Temple"
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Temple_in_Cochabamba.jpg"
   },
   {
     templeName: "Templo Andino",
     location: "Mendoza, Argentina",
     dedicated: "2024, April, 15",
     area: 10100,
-    imageUrl: "https://via.placeholder.com/400x250?text=Templo+Andino"
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Temple_Buenos_Aires.jpg"
   }
 ];
-
 
 // Mostrar templos en pantalla
 function outputTemples(temples) {
@@ -157,4 +155,3 @@ document.querySelector("#small").addEventListener("click", () => filterTemples("
 document.addEventListener("DOMContentLoaded", () => {
   outputTemples(temples);
 });
-
