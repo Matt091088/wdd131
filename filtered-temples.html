@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temple Album</title>
+  <link rel="stylesheet" href="week2/styles/filtered-temples.css" />
+  <link rel="stylesheet" href="week2/styles/temples-large.css" media="screen and (min-width: 640px)" />
+  <script src="week2/scripts/filtered-temples.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu" aria-label="Toggle menu">☰</button>
+    <nav id="nav-menu" class="nav" aria-label="Primary">
+      <button id="home">Home</button>
+      <button id="old">Old</button>
+      <button id="new">New</button>
+      <button id="large">Large</button>
+      <button id="small">Small</button>
+    </nav>
+  </header>
+
+  <main id="temples-container">
+    <h1>Temples Around the World</h1>
+    <div id="temples" class="gallery" aria-live="polite"></div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Fernando Matias Tau | WDD131</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
