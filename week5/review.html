@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Review Submitted</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background: #f0f0f0;
+      text-align: center;
+    }
+    main {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Thank You!</h1>
+  </header>
+
+  <main>
+    <p>Your product review has been submitted successfully.</p>
+    <p>You have submitted <strong><span id="reviewCount">0</span></strong> review(s).</p>
+    <a href="form.html">Submit another review</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 | WDD131 | Fernando Tau</p>
+  </footer>
+
+  <script>
+    // Obtener contador actual o iniciar en 0
+    let count = Number(localStorage.getItem("reviewCount")) || 0;
+    count++;
+    localStorage.setItem("reviewCount", count);
+    document.getElementById("reviewCount").textContent = count;
+  </script>
+</body>
+</html>

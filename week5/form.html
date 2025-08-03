@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/form.css" />
+</head>
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html">
+      <!-- Product Name (Select) -->
+<label for="productName">Product Name:</label>
+<select id="productName" name="productName" required>
+  <option value="" disabled selected>Select a Product ...</option>
+  <!-- Las opciones se agregarán con JavaScript -->
+</select>
+<!-- Overall Rating -->
+<fieldset>
+  <legend>Overall Rating:</legend>
+  <label><input type="radio" name="rating" value="1" required /> 1 ★</label><br />
+  <label><input type="radio" name="rating" value="2" /> 2 ★★</label><br />
+  <label><input type="radio" name="rating" value="3" /> 3 ★★★</label><br />
+  <label><input type="radio" name="rating" value="4" /> 4 ★★★★</label><br />
+  <label><input type="radio" name="rating" value="5" /> 5 ★★★★★</label>
+</fieldset>
+
+<!-- Date of Installation -->
+<label for="installDate">Date of Installation:</label>
+<input type="date" id="installDate" name="installDate" required />
+
+<!-- Useful Features (Checkboxes) -->
+<fieldset>
+  <legend>Useful Features:</legend>
+  <label><input type="checkbox" id="feature1" name="features" value="Easy to install" /> Easy to install</label><br />
+  <label><input type="checkbox" id="feature2" name="features" value="Durable" /> Durable</label><br />
+  <label><input type="checkbox" id="feature3" name="features" value="Energy efficient" /> Energy efficient</label><br />
+  <label><input type="checkbox" id="feature4" name="features" value="Compact design" /> Compact design</label>
+</fieldset>
+
+<!-- Written Review -->
+<label for="review">Written Review (optional):</label>
+<textarea id="review" name="review" rows="4" cols="40" placeholder="Write your review here..."></textarea>
+
+<!-- User Name -->
+<label for="userName">Your Name (optional):</label>
+<input type="text" id="userName" name="userName" placeholder="Enter your name" />
+
+<input type="submit" value="Submit Review" />
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 | WDD131 | Fernando Tau</p>
+  </footer>
+
+  <script src="scripts/form.js"></script>
+</body>
+</html>
